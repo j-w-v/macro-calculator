@@ -44,9 +44,9 @@
         var totalC = ca + fa + pr;
         $('.calories span').html(totalC);
         console.log(totalC);
-        var perC = Math.ceil(ca / totalC * 100);
-        var perF = Math.ceil(fa / totalC * 100);
-        var perP = Math.ceil(pr / totalC * 100);
+        var perC = Math.round(ca / totalC * 100);
+        var perF = Math.round(fa / totalC * 100);
+        var perP = Math.round(pr / totalC * 100);
         $('.sideC .percent').html(perC);
         $('.sideF .percent').html(perF);
         $('.sideP .percent').html(perP);
